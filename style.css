@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+/* FONT FACES */
+
+@font-face {
+    font-family: "FuseV2-Display";
+    src: url(./fonts/FuseV.2Display-Book.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuseV2-Display";
+    src: url(./fonts/FuseV.2Display-BookItalic.woff2);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FuseV2-Display";
+    src: url(./fonts/FuseV.2Display-ExtraBold.woff2);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuseV2-Display";
+    src: url(./fonts/FuseV.2Display-ExtraBoldItalic.woff2);
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FuseV2-Text";
+    src: url(./fonts/FuseV.2Text-Book.woff2);
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuseV2-Text";
+    src: url(./fonts/FuseV.2Text-BookItalic.woff2);
+    font-weight: 350;
+    font-style: italic;
+}
+
+/* TYPOGRAPHY */
+
+.heading2 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 122px;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+}
+
+.heading3 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 81px;
+    line-height: 88px;
+    letter-spacing: -0.02em;
+}
+
+.heading4 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 56px;
+    letter-spacing: -0.01em;
+}
+
+.heading5 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
+
+.heading6 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+.subtitle {
+    font-family: "FuseV2-Display";
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.subtitle2 {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.body {
+    font-family: "FuseV2-Display";
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.body-text {
+    font-family: "FuseV2-Text";
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.body2 {
+    font-family: "FuseV2-Display";
+    font-weight: 350; /* Smaller differences in design and fonts */
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+
+.button {
+    font-family: "FuseV2-Display";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+}
+
+/* (...) */
+
+/* SECTION_INNOVATORS */
+
+.innovators {
+    display: flex;
+    margin: 0;
+    --top-margin: 96px;
+}
+
+.innovators__text {
+    padding-left: 104px;
+    padding-right: 158px;
+    width: calc(100% - 696px);
+    padding-top: var(--top-margin);
+}
+
+.innovators__text-box {
+    position: sticky;
+    top: var(--top-margin);
+}
+
+.innovators__text-box-title {
+    margin-bottom: 32px;
+}
+
+.innovators__items {
+    width: 696px;
+    display: flex;
+}
+
+.innovators__items-column:not(:first-of-type) {
+    margin-left: 24px;
+}
+
+.innovators__items-column:nth-of-type(2) {
+    margin-top: 100px;
+}
+
+.innovators__items-column-item {
+    width: 216px;
+    height: 400px;
+    background-color: aqua;
+}
+
+.innovators__items-column-item:not(:nth-of-type(4n)) {
+    margin-bottom: 24px;
+}
