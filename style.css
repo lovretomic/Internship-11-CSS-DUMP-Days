@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     height: 312px;
     position: absolute;
     top: 0;
-    background: linear-gradient(123.15deg, rgba(13, 143, 211, 0.68) -3.37%, rgba(10, 58, 167, 0.68) 17.75%, rgba(197, 55, 84, 0.68) 53.11%, rgba(250, 82, 64, 0.68) 70.34%, rgba(252, 221, 163, 0.68) 103.4%);
+    background: var(--gradient-8);
     background-blend-mode: hue;
 }
 
@@ -259,4 +259,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .friends__box-title {
     margin-bottom: 25px;
+}
+
+.friends__box-quote {
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
