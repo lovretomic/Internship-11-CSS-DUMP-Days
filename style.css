@@ -194,8 +194,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .innovators__items-item {
     width: var(--item-width);
-    min-height: 400px;
-    background-color: #0e0e0e;
+    min-height: 300px;
     position: relative;
 }
 
@@ -205,4 +204,27 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .innovators__items-item:nth-of-type(3n - 1) {
     top: 112px;
+}
+
+.innovators__items-item-title::before { /* ::after doesn't work on <img> */
+    content: "";                        /* gradient too strong? */
+    width: 216px;
+    height: 312px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(123.15deg, rgba(13, 143, 211, 0.68) -3.37%, rgba(10, 58, 167, 0.68) 17.75%, rgba(197, 55, 84, 0.68) 53.11%, rgba(250, 82, 64, 0.68) 70.34%, rgba(252, 221, 163, 0.68) 103.4%);
+    background-blend-mode: hue;
+}
+
+.innovators__items-item-title {
+    margin-bottom: 6px;
+}
+
+.innovators__items-item-subtitle {
+    color: #54545F;
+    margin-bottom: 10px;
+}
+
+.innovators__items-item-logo {
+    height: 18px;
 }
