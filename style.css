@@ -180,24 +180,29 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .innovators__items {
-    width: 696px;
+    --item-width: 216px;
+    --item-gap: 24px;
+    --item-columns: 3;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(
+        var(--item-width) * var(--item-columns) + 
+        var(--item-gap) * (var(--item-columns) - 1)
+    );
 }
 
-.innovators__items-column:not(:first-of-type) {
-    margin-left: 24px;
-}
-
-.innovators__items-column:nth-of-type(2) {
-    margin-top: 112px;
-}
-
-.innovators__items-column-item {
-    width: 216px;
-    height: 400px;
+.innovators__items-item {
+    width: var(--item-width);
+    min-height: 400px;
     background-color: #0e0e0e;
+    position: relative;
 }
 
-.innovators__items-column-item:not(:nth-of-type(4n)) {
-    margin-bottom: 24px;
+.innovators__items-item:not(:nth-of-type(n + 10)) {
+    margin-bottom: var(--item-gap);
+}
+
+.innovators__items-item:nth-of-type(3n - 1) {
+    top: 112px;
 }
