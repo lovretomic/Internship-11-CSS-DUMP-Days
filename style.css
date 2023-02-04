@@ -13,6 +13,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: #FFFFFF;
 }
 
+.layout-spacing {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* FONT FACES */
 
 @font-face {
@@ -151,21 +157,21 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* SECTION_INNOVATORS */
 
-.innovators {
+.innovators .layout-spacing{
     display: flex;
-    margin: 0;
     --top-margin: 96px;
 }
 
 .innovators__text {
     padding-left: 104px;
-    padding-right: 158px;
+    /* padding-right: 158px; */
     width: calc(100% - 696px);
     padding-top: var(--top-margin);
 }
 
 .innovators__text-box {
     position: sticky;
+    width: 482px;
     top: var(--top-margin);
 }
 
