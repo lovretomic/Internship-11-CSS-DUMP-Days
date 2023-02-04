@@ -19,6 +19,19 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-right: auto;
 }
 
+/* GRADIENTS */
+
+:root {
+--gradient-1: linear-gradient(89.12deg, #37F3E1 -40.27%, #A109FF 101.93%);
+--gradient-2: linear-gradient(44.61deg, #00B5C1 9.43%, #4336B9 41.88%, #FA4343 106.56%);
+--gradient-3: linear-gradient(58.11deg, #0022C1 26.81%, #7B47B2 57.59%, #ED6AA5 82.34%);
+--gradient-4: linear-gradient(124.93deg, #0D8FD3 5.44%, #0B60BB 17.95%, #0A3AA7 36.44%, #6A387D 69.53%, #C53754 105.59%, #FA5240 117.57%);
+--gradient-5: linear-gradient(180deg, #0066FF 24.48%, #FF0000 100%);
+--gradient-6: linear-gradient(180deg, #0066FF 24.48%, rgba(0, 209, 255, 0.81) 100%);
+--gradient-7: linear-gradient(156.23deg, #0D8FD3 -0.74%, #0B60BB 11.13%, #0A3AA7 28.67%, #6A387D 60.05%, #C53754 94.26%, #FA5240 105.63%, #FCDDA3 127.15%);
+--gradient-8: linear-gradient(123.15deg, rgba(13, 143, 211, 0.68) -3.37%, rgba(10, 58, 167, 0.68) 17.75%, rgba(197, 55, 84, 0.68) 53.11%, rgba(250, 82, 64, 0.68) 70.34%, rgba(252, 221, 163, 0.68) 103.4%);
+}
+
 /* FONT FACES */
 
 @font-face {
@@ -160,6 +173,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .innovators .layout-spacing{
     display: flex;
     --top-margin: 96px;
+    padding-bottom: 334px;
 }
 
 .innovators__text {
@@ -227,4 +241,22 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .innovators__items-item-logo {
     height: 18px;
+}
+
+/* SECTION_FRIENDS */
+
+.friends {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends__box {
+    width: 800px;
+    text-align: center;
+}
+
+.friends__box-title {
+    margin-bottom: 25px;
 }
