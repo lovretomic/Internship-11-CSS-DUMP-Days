@@ -497,6 +497,7 @@ a {
 
 .friends__box-quote {
   background: var(--gradient-2);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -507,7 +508,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 600px;
+}
+
+.sponsors__golden {
+  margin-bottom: 330px;
 }
 
 .sponsors__golden-content {
@@ -569,6 +573,6 @@ a {
   margin-bottom: auto;
 }
 
-.sponsors__golden-content-cards-card-content .heading6{
+.sponsors__golden-content-cards-card-content .heading6 {
   margin-bottom: 11px;
 }
