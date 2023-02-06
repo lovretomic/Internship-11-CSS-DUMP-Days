@@ -658,3 +658,103 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/*SECTION_FAQ*/
+body{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.FAQ{
+  width: 100%;
+  position: relative;
+}
+
+.faq-text{
+  padding-top: 745px;
+  margin-left: 14.5%;
+  width: 45.5%;
+}
+
+.faq-smallTitle{
+  font-family: 'FuseV2-Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.faq-title{font-family: 'FuseV2-Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 68px;    
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin-bottom: 39.41px;
+}
+
+.faq-title span{
+  background: linear-gradient(89.12deg, #37F3E1 -40.27%, #A109FF 101.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faqs{
+  padding-top: 33.49px;
+  padding-bottom: 33.49px;
+  font-family: 'FuseV2-Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F5F5F7;
+}
+
+.faqs:not(:last-child){
+  border-bottom: 1px solid #F5F5F710;
+}
+
+.twisted-img{
+  position: absolute;
+  top: 0;
+  right: -1056px;
+}
+
+@media screen and (max-width: 900px) {
+  .faq-text{
+      padding-top: 0;
+      margin: 0 24px 0 24px;
+      width: calc(100%  - 24px*2);
+  }
+
+  .faq-title{
+      margin-bottom: 72px;
+  }
+
+  .faqs{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      line-height: 24px;
+  }
+
+  .twisted-img{
+      margin-left: -80px;
+      transform: rotate(7.49deg);
+      position: static;
+      width: 840.55px;
+      height: 721.35px;
+      display: block;
+  }
+}
+
