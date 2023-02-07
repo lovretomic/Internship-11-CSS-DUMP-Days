@@ -414,7 +414,7 @@ a {
 }
 @media screen and (max-width: 800px) {
   .header-hero .layout-spacing {
-    padding: 22px 0;
+    padding: 24px 0;
   }
   .header-hero-wrapper {
     width: 332px;
@@ -445,7 +445,7 @@ a {
   }
 }
 
-/* SECTION_FRIENDS */
+/* SECTION_DDMT */
 .DDMT {
   display: flex;
   justify-content: center;
@@ -454,7 +454,6 @@ a {
 .DDMT-wrapper {
   width: 100%;
   margin-top: 352px;
-  margin-bottom: 216px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,8 +512,8 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.konferencija{
-  display:none;
+.konferencija {
+  display: none;
 }
 .scroll__subtitle {
   text-align: center;
@@ -525,7 +524,7 @@ a {
     margin-top: 408px;
   }
   .DDMT-wrapper__scroll-owerflow {
-    overflow-x:auto;
+    overflow-x: auto;
     margin: 0;
     margin-top: 272px;
     width: 200px;
@@ -538,27 +537,115 @@ a {
     align-items: center;
     justify-content: space-between;
   }
-  .DDMT-wrapper__scroll__stats{
+  .DDMT-wrapper__scroll__stats {
     align-items: center;
     margin: 0;
     justify-content: flex-start;
   }
-  .DDMT-wrapper__scroll__stats .heading2{
+  .DDMT-wrapper__scroll__stats .heading2 {
     font-family: "FuseV2-Display";
-  font-weight: 800;
-  font-size: 54px;
-  line-height: 56px;
-  letter-spacing: -0.01em;
-  display: flex;
-  justify-content: center;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 56px;
+    letter-spacing: -0.01em;
+    display: flex;
+    justify-content: center;
   }
   .DDMT-wrapper__scroll .DDMT-wrapper__scroll__stats :not(:last-child) {
     margin-right: 0;
+  }
+  .konferencija {
+    display: block;
+  }
 }
-.konferencija{
-  display:block;
+
+/* SECTION_FLYTALKS */
+.FlyTalks-wrapper {
+  max-width: 1230px;
+  margin: auto;
+  margin-top: 748px;
+  position: relative;
+  margin-bottom: 500px;
 }
+.FlyTalks-wrapper__text {
+  width: 445px;
+  height: 332px;
 }
+.FlyTalks-wrapper__text .heading2 {
+  color: #f5f5f7;
+}
+.FlyTalks-wrapper__text .body-text {
+  margin-top: 56px;
+  margin-bottom: 54px;
+}
+.FlyTalks-wrapper__text a {
+  text-decoration: none;
+}
+.FlyTalks-wrapper__text .transparent-button {
+  width: 151px;
+}
+.FlyTalks-wrapper__img {
+  position: absolute;
+  width: 768px;
+  height: 1012px;
+  right: -90px;
+  top: -350px;
+}
+@media screen and (max-width: 1299px) {
+  .FlyTalks {
+    width: 100%;
+    overflow: hidden;
+  }
+  .FlyTalks-wrapper {
+    height: 766px;
+    position: unset;
+    width: 100%;
+    margin: 24px auto;
+    margin-top: 198px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 500px;
+    overflow: hidden;
+  }
+  .FlyTalks-wrapper__text {
+    width: 327px;
+    height: 252px;
+  }
+  .FlyTalks-wrapper__img {
+    position: unset;
+    margin: auto;
+    width: 480px;
+    height: 632px;
+  }
+  .FlyTalks-wrapper__text .heading2 {
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 56px;
+    letter-spacing: -0.01em;
+    color: #f5f5f7;
+  }
+  .FlyTalks-wrapper__text .body-text {
+    margin-top: 22px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .FlyTalks-wrapper__img {
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: -100px;
+    margin-right: 0;
+    left: 0;
+    width: 480px;
+    height: 632px;
+    margin-left: 0;
+    overflow: hidden;
+  }
+}
+
 /* SECTION_INNOVATORS */
 
 .innovators .layout-spacing {
