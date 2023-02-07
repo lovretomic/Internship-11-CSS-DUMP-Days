@@ -680,7 +680,7 @@ a {
   line-height: 68px;
 }
 @media screen and (max-width: 1299px) {
-  .Map .layout-spacing{
+  .Map .layout-spacing {
     padding: 0 24px;
     overflow: hidden;
     display: flex;
@@ -696,42 +696,115 @@ a {
     display: flex;
     justify-content: center;
   }
-  .map__subtitle{
+  .map__subtitle {
     font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0em;
+    line-height: 16px;
+    letter-spacing: 0em;
   }
-  .Map-wrapper__text{
+  .Map-wrapper__text {
     width: 327px;
     top: 255px;
     left: unset;
     right: unset;
     bottom: 0;
   }
-  .Map-wrapper__text .heading2{
+  .Map-wrapper__text .heading2 {
     font-weight: 800;
     font-size: 54px;
     line-height: 56px;
     letter-spacing: -0.01em;
     margin-bottom: 40px;
   }
-  .Map-wrapper__text .heading4{
+  .Map-wrapper__text .heading4 {
     font-weight: 800;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0em;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0em;
   }
-  .Map-wrapper__map{
+  .Map-wrapper__map {
     height: 343px;
     width: 547px;
   }
-  .Map-wrapper__pointer{
+  .Map-wrapper__pointer {
     height: 25px;
     width: 17px;
     top: 212px;
     right: 30px;
   }
 }
+
+/* SECTION_ONLINE */
+.online-wrapper {
+  height: 1915px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 57px;
+}
+.online-wrapper__text {
+  width: 504px;
+  height: 394px;
+  position: absolute;
+  top: 469px;
+  left: 105px;
+}
+.online-wrapper .subtitle {
+  color: #ffffff;
+}
+.online-wrapper p {
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.online-wrapper a {
+  text-decoration: none;
+}
+.online-wrapper__img {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+  height: 1860px;
+  width: 1860px;
+}
+.online-wrapper__text button {
+  width: 153px;
+}
+@media screen and (max-width: 2200px) {
+  .online-wrapper {
+    overflow: clip;
+  }
+}
+
+@media screen and (max-width: 1299px){
+  .online-wrapper .subtitle {
+    margin-bottom: 122px;
+  }
+  .online-wrapper p {
+    width: 327px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .online-wrapper__text{
+    position: unset;
+    width: 327px;
+  }
+  .online-wrapper .heading2{
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+  }
+  .online-wrapper__img {
+    position: absolute;
+    left: -150px;
+    top: 300px;
+    height: 950px;
+    width: 950px;
+}
+}
+
 /* SECTION_INNOVATORS */
 
 .innovators .layout-spacing {
