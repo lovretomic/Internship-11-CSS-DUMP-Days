@@ -980,6 +980,7 @@ img{
   width:  calc((497/1440 *100vw));
   min-height: 250px;
   min-width: 250px;
+  margin-right: 24px;
 }
 
 
@@ -1017,7 +1018,7 @@ img{
   }
 
   .person{
-      margin-top: 30px;
+      margin: 30px 0 0 0;
       align-self: center;
       width: 100%;
       justify-self: flex-end;
@@ -1029,3 +1030,159 @@ img{
       margin: 0;
   }
 }
+
+/*SECTION_APP*/.app{
+    margin-top: 450px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app > h2{
+    font-family: 'FuseV2-Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 122px;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+}
+
+.app-wrapper{
+    margin-top: 174px;
+    margin-bottom: 103px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: calc(100vw*256/1440);
+    padding-right: calc(100vw*170/1440);
+}
+
+.app-text{
+    width: calc(100vw*330/1440);
+}
+
+.app-text >span{
+    font-family: 'FuseV2-Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.app-image{ 
+    display: block;
+    position: sticky;
+    top: 120px;
+    background: url(assets/images/Component\ 1.png); 
+    background-size: 71% 97%;
+    width: min-content;
+    height: min-content;
+    background-repeat:no-repeat; 
+    background-position: center;
+}
+
+.app-image >img{ 
+    aspect-ratio: 440/737;
+    width: calc(100vw*440/1440);
+    max-width: 440px;
+}
+
+.app-sections{
+    margin-top: 165px;
+}
+
+.app-section-title{
+    font-family: 'FuseV2-Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 68px;
+}
+
+.app-section:not(:first-child){
+    margin-top: 130px;
+}
+
+.app-section-content{
+    margin-top: 27px;
+    font-family: 'FuseV2-Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .mobile{
+        display: block;
+    }
+
+    .deskop{
+        display: none;
+    }
+    
+    .app >h2{
+        font-family: 'FuseV2-Display';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 68px;
+    }
+
+    .app-wrapper{
+        align-items: center;
+        margin-top: 119px;
+        margin-bottom: 150px;;
+        flex-direction: column-reverse;
+        padding:0;
+    }
+    
+    .app-text{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 170*2px);
+    }
+    
+    .app-image{ 
+        align-self: center;
+        position: static;
+        margin-bottom: 100px;
+    }
+
+    .app-image>img{
+        width: 320px; 
+        height: 536px; 
+    }
+
+    .app-sections{
+        margin-top: 0px;
+    }
+
+    .app-section-title{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .app-section:not(:first-child){
+        margin-top: 104px;
+
+    }
+
+    .app-section-content{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.app-text{
+  width: calc(100% - 36*2px);
+}}
