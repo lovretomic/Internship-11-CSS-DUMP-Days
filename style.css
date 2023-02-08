@@ -984,3 +984,148 @@ a {
 .sponsors__golden-content-cards-card-content .heading6 {
   margin-bottom: 11px;
 }
+
+.sponsors__silver .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__silver-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__silver-content {
+  display: grid;
+  width: 100%;
+  row-gap: 38px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__silver-content-logo:not(:nth-of-type(5n + 1)) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors__silver-content-logo:nth-of-type(5n) {
+  margin-right: 0;
+}
+
+.sponsors__bronze-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__bronze .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__bronze-content {
+  display: grid;
+  width: 100%;
+  column-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__bronze-content-logo:nth-of-type(1) {
+  margin-left: auto;
+}
+
+.sponsors__organisational-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__organisational .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__organisational-content {
+  display: grid;
+  max-width: 570px;
+  margin: auto;
+  column-gap: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__organisational-content-logo:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors__organisational-content-logo:nth-of-type(3) {
+  margin-left: auto;
+}
+
+.sponsors__game-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__game .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__game-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsors__media-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__media .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__media-content {
+  display: grid;
+  max-width: 874px;
+  margin: auto;
+  column-gap: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__media-content-logo:not(:nth-of-type(1)) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors__media-content-logo:nth-of-type(4) {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.sponsors__friends-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__friends .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__friends-content {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  column-gap: 260px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sponsors__friends-content-logo:nth-of-type(1) {
+  margin-left: auto;
+  margin-right: 0;
+}
