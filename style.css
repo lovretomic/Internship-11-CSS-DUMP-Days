@@ -923,5 +923,109 @@ body{
   .questions-numbers {
     display: none !important;
   }
+}
 
+/*SECTION_FIVE*/
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.five{
+  margin: 287px auto 563px;
+  width: 100%;
+}
+
+.five-background{
+  position: relative;
+  background: url(assets/images/five.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 100% 100%;
+  width: 100%;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.five-text{
+  width: 501px;
+  color: #F5F5F7;
+}
+
+.five-text h3{
+  font-family: 'FuseV2-Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 81px;
+  line-height: 88px;
+  letter-spacing: -0.02em;
+}
+
+.five-text p{
+  font-family: 'FuseV2-Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 18px auto 38px;
+}
+
+.person{
+  align-self: flex-end;
+  aspect-ratio: 1/1;
+  width:  calc((497/1440 *100vw));
+  min-height: 250px;
+  min-width: 250px;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .five{
+      display: flex;
+      justify-content: center;
+      margin: 150px auto 313px;
+      height: unset;      
+  }
+
+  .five-background{
+      background: url(assets/images/five-mobile.png);
+      flex-direction: column-reverse;
+      background-size: 100% 100%;
+      margin: 0 20%;
+  }
+
+  .five-text{
+      width: calc(100% - 20px*2);
+      text-align: center;
+      justify-items: center;
+      margin-bottom: 40px;
+  }
+  
+  .five-text h3{
+      font-size: 54px;
+      line-height: 68px;
+      letter-spacing: -0.01em;
+  }
+
+  .five-text p{
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .person{
+      margin-top: 30px;
+      align-self: center;
+      width: 100%;
+      justify-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .five-background{
+      margin: 0;
+  }
 }
