@@ -1129,3 +1129,89 @@ a {
   margin-left: auto;
   margin-right: 0;
 }
+
+/* SECTION_JOBS */
+
+.jobs__textbox {
+  width: 400px;
+  margin-left: 312px;
+}
+
+.jobs__textbox-title {
+  margin-bottom: 42px;
+}
+
+.jobs__textbox-subtitle {
+  margin-bottom: 50px;
+}
+
+.jobs__textbox-buttons {
+  display: flex;
+}
+
+.jobs__textbox-button {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(245, 245, 247, 0.05);
+  border: none;
+}
+
+.jobs__textbox-button:nth-of-type(2) {
+  transform: rotate(180deg);
+  margin-left: 8px;
+}
+
+.jobs__content {
+  width: 100%;
+  display: flex;
+  overflow-y: scroll;
+  padding: 0 312px;
+}
+
+.jobs__content-item {
+  width: 816px;
+  height: 376px;
+  padding: 40px;
+  display: flex;
+}
+
+.item__decor {
+  width: 50px;
+  background-image: url(./assets/images/job-decor.jpg);
+  background-size: cover;
+  margin-right: 30px;
+}
+
+.item__header {
+  position: relative;
+  width: 233px;
+}
+
+.item__header-location {
+  display: flex;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+}
+
+.item__header-location img {
+  margin-right: 13px;
+}
+
+.item__content {
+  margin-left: 55px;
+}
+
+.item__content-text {
+  width: 396px;
+  margin-bottom: 16px;
+}
+
+.item__content-link {
+  text-decoration: none;
+}
+
+.item__content-link img {
+  transform: rotate(180deg);
+  height: 10px;
+}
