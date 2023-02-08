@@ -984,3 +984,29 @@ a {
 .sponsors__golden-content-cards-card-content .heading6 {
   margin-bottom: 11px;
 }
+
+.sponsors__silver .layout-spacing{
+  width: 100%;
+}
+
+.sponsors__silver-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__silver-content {
+  display: grid;
+  width: 100%;
+  row-gap: 38px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__silver-content-logo:not(:nth-of-type(5n + 1)) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors__silver-content-logo:nth-of-type(5n) {
+  margin-right: 0;
+}
