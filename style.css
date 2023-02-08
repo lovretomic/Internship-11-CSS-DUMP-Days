@@ -819,7 +819,6 @@ a {
 
 .innovators__text {
   padding-left: 104px;
-  /* padding-right: 158px; */
   width: calc(100% - 696px);
   padding-top: var(--top-margin);
 }
@@ -862,8 +861,7 @@ a {
 }
 
 .innovators__items-item-title::before {
-  /* ::after doesn't work on <img> */
-  content: ""; /* gradient too strong? */
+  content: "";
   width: 216px;
   height: 312px;
   position: absolute;
@@ -883,6 +881,56 @@ a {
 
 .innovators__items-item-logo {
   height: 18px;
+}
+
+@media screen and (max-width: 1299px) {
+  .innovators .layout-spacing {
+    display: block;
+    width: 327px;
+  }
+
+  .innovators__text {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .innovators__text-box {
+    position: sticky;
+    width: 100%;
+    top: var(--top-margin);
+  }
+  
+  .innovators__text-box-title {
+    margin-bottom: 32px;
+    font-size: 54px;
+    line-height: 68px;
+  }
+  
+  .innovators__items-item-image {
+    width: 100%;
+  }
+
+  .innovators__items {
+    --item-columns: 2;
+    --item-width: 156px;
+  }
+
+  .innovators__items-item:nth-of-type(3n - 1) {
+    top: 0;
+  }
+  
+  .innovators__items-item:nth-of-type(2n) {
+    top: 112px;
+  }
+  
+  .innovators__text-box {
+    position:unset;
+    margin-bottom: 160px;
+  }
+
+  .innovators__items-item-title::before {
+    content: none;
+  }
 }
 
 /* SECTION_FRIENDS */
@@ -908,6 +956,15 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1299px) {
+  .friends__box-quote {
+    font-size: 30px;
+    width: 290px;
+    line-height: 35px;
+    margin: auto;
+  }  
 }
 
 /* SECTION__SPONSORS */
@@ -985,6 +1042,51 @@ a {
   margin-bottom: 11px;
 }
 
+@media screen and (max-width: 1299px) {
+  .sponsors__golden-title {
+    font-size: 40px;
+  }
+  
+  .sponsors__golden-content-logos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsors__golden-content-logos-logo:nth-of-type(2) {
+    margin: 70px 0;
+  } 
+  
+  .sponsors__golden-content-logos-logo:nth-of-type(3) {
+    margin-left: 0;
+  } 
+
+  .sponsors__golden-content-cards {
+    padding: 0;
+    margin: auto;
+  }
+
+  .sponsors__golden-content-cards-card {
+    display: block;
+    width: 327px;
+    margin: auto;
+  }
+
+  .sponsors__golden-content-cards-card:not(:last-of-type) {
+    margin-bottom: 90px;
+  }
+
+  .sponsors__golden-content-cards-card-image {
+    width: 327px;
+  }
+  
+  .sponsors__golden-content-cards-card-content {
+    width: 327px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 0;
+  }
+}
+
 .sponsors__silver .layout-spacing{
   width: 100%;
   margin-bottom: 300px;
@@ -1010,6 +1112,28 @@ a {
 
 .sponsors__silver-content-logo:nth-of-type(5n) {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1299px) {
+  .sponsors__silver-content {
+    display: grid;
+    width: 100%;
+    row-gap: 38px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .sponsors__silver-content-logo:not(:nth-of-type(2n)) {
+    margin: auto;
+  }
+
+  .sponsors__silver-content-logo:not(:nth-of-type(2n - 1)) {
+    margin: auto;
+  }
+  
+  .sponsors__silver-content-logo:nth-of-type(5n) {
+    margin: auto;
+  }
 }
 
 .sponsors__bronze-title {
@@ -1062,6 +1186,21 @@ a {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1299px) {
+  .sponsors__organisational-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsors__organisational-content-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .sponsors__organisational-content-logo:nth-of-type(2) {
+    margin: 60px auto;
+  }
+}
+
 .sponsors__game-title {
   text-align: center;
   margin-bottom: 115px;
@@ -1107,6 +1246,24 @@ a {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1299px) {
+  .sponsors__media-content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .sponsors__media-content-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+  }
+  
+  .sponsors__media-content-logo:nth-of-type(4) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .sponsors__friends-title {
   text-align: center;
   margin-bottom: 115px;
@@ -1128,6 +1285,22 @@ a {
 .sponsors__friends-content-logo:nth-of-type(1) {
   margin-left: auto;
   margin-right: 0;
+}
+
+@media screen and (max-width: 1299px){
+  .sponsors__friends-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsors__friends-content img:nth-of-type(2) {
+    height: 10px;
+    margin-top: 60px;
+  }
+  .sponsors__friends-content-logo:nth-of-type(1) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* SECTION_JOBS */
@@ -1169,7 +1342,7 @@ a {
 }
 
 .jobs__content-item {
-  width: 816px;
+  max-width: 816px;
   height: 376px;
   padding: 40px;
   display: flex;
@@ -1218,4 +1391,106 @@ a {
 
 .jobs__textbox-buttons:nth-of-type(2) {
   margin-left: 300px;
+}
+
+@media screen and (max-width: 1299px) {
+  .jobs__textbox {
+    max-width: 400px;
+    margin-left: 24px;
+  }
+  
+  .jobs__textbox-title {
+    margin-bottom: 42px;
+  }
+  
+  .jobs__textbox-subtitle {
+    margin-bottom: 50px;
+  }
+  
+  .jobs__textbox-buttons {
+    display: flex;
+
+  }
+  
+  .jobs__textbox-button {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(245, 245, 247, 0.05);
+    border: none;
+  }
+  
+  .jobs__textbox-button:nth-of-type(2) {
+    transform: rotate(180deg);
+    margin-left: 8px;
+  }
+  
+  .jobs__content {
+    width: 100%;
+    display: block;
+    overflow-y: scroll;
+    padding: 0;
+  }
+  
+  .jobs__content-item {
+    max-width: 327px;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item__decor {
+    width: 100%;
+    height: 30px;
+    background-image: url(./assets/images/job-decor.jpg);
+    background-size: cover;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .item__header {
+    position: relative;
+    width: 100%;
+  }
+
+  .item__header-title {
+    margin: 20px 0;
+  }
+  
+  .item__header-location {
+    display: flex;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .item__header-location img {
+    margin-right: 15px;
+  }
+  
+  .item__content {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .item__content-text {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .item__content-link {
+    text-decoration: none;
+  }
+  
+  .item__content-link img {
+    transform: rotate(180deg);
+    height: 10px;
+  }
+  
+  .jobs__textbox-buttons:nth-of-type(2) {
+    margin-left: 300px;
+  }
 }
