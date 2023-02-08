@@ -726,10 +726,13 @@ body{
 }
 
 .twisted-img{
-  position: absolute;
-  top: 0;
-  right: -1056px;
-  transform: rotate(3.11deg);
+    height: 1414px;
+    width: 1648px;
+    max-width: unset;
+    max-height: unset;
+    position: absolute;
+    top: 0;
+    right: -1056px;
 }
 
 @media screen and (max-width: 900px) {
