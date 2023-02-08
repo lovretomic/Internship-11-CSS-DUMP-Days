@@ -1133,7 +1133,7 @@ a {
 /* SECTION_JOBS */
 
 .jobs__textbox {
-  width: 400px;
+  max-width: 400px;
   margin-left: 312px;
 }
 
