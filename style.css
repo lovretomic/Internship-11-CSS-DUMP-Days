@@ -1215,3 +1215,7 @@ a {
   transform: rotate(180deg);
   height: 10px;
 }
+
+.jobs__textbox-buttons:nth-of-type(2) {
+  margin-left: 300px;
+}
