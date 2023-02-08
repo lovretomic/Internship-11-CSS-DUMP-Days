@@ -1046,7 +1046,7 @@ a {
 
 .sponsors__organisational-content {
   display: grid;
-  width: 570px;
+  max-width: 570px;
   margin: auto;
   column-gap: 100px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1069,8 +1069,63 @@ a {
 
 .sponsors__game .layout-spacing{
   width: 100%;
+  margin-bottom: 300px;
 }
 
 .sponsors__game-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsors__media-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__media .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__media-content {
+  display: grid;
+  max-width: 874px;
   margin: auto;
+  column-gap: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.sponsors__media-content-logo:not(:nth-of-type(1)) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors__media-content-logo:nth-of-type(4) {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.sponsors__friends-title {
+  text-align: center;
+  margin-bottom: 115px;
+}
+
+.sponsors__friends .layout-spacing{
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+.sponsors__friends-content {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  column-gap: 260px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sponsors__friends-content-logo:nth-of-type(1) {
+  margin-left: auto;
+  margin-right: 0;
 }
