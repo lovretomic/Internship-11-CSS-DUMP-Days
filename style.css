@@ -1745,7 +1745,7 @@ a {
   .jobs__content {
     width: 100%;
     display: block;
-    overflow-y: scroll;
+    overflow: hidden;
     padding: 0;
   }
 
